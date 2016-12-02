@@ -66,13 +66,13 @@ $(document).ready(function(){
         });
     });
 
-    $("#1").click(function(){
+    $("#btn1").click(function(){
         $.get("/gallery", function(data, status){
 		$("#about").load("/gallery");
         });
     });
 
-    $("#2").click(function(){
+    $("#btn2").click(function(){
         $.get("/contact", function(data, status){
 		$("#about").load("/contact");
         });
@@ -109,8 +109,8 @@ $(document).ready(function(){
                         <ul class="nav navbar-nav navbar-right">
                            
                             <button id ="button" >About</button>
-                            <button id ="1" >Gallery</button>
-                            <button id ="2">Contact</button>
+                            <button id ="btn1" >Gallery</button>
+                            <button id ="btn2">Contact</button>
                             
                            
      
